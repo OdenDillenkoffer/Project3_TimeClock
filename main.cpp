@@ -1,6 +1,7 @@
 #include <NameGen.h>
 #include <graphImp.h>
 #include <unordered_set>
+#include "UIStuff.h"
 #pragma
 //job Stuff
 Job Janitor("Janitor", 0, 24, 4, 8, 12);
@@ -52,5 +53,8 @@ int main(){
         }
     }
     //creates all the edges I think, will need to be recaculated per shift?
+
+
     return 0;
 }
+
