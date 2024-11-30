@@ -2,12 +2,12 @@
 #include <iostream>
 #include <vector>
 class Job{
-private:
+public:
 std::pair<int, int> Worktime;
 int MinimumShift;
 int MaxShift;
 int stdWage;
-public:
+
 std::string JobTitle;
 
 //constructor
