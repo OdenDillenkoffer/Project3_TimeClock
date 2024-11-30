@@ -11,7 +11,7 @@ public:
 std::string JobTitle;
 
 //constructor
-Job(std::string title, int begin = 0, int end = 0, int MiniumShift = 0, int MaxShift = 0, int stdWage = 0)
+Job(std::string title = " ", int begin = 0, int end = 0, int MiniumShift = 0, int MaxShift = 0, int stdWage = 0)
 : JobTitle(std::move(title)), Worktime(begin, end), MinimumShift(MiniumShift), MaxShift(MaxShift), stdWage(stdWage) {}
 
 
