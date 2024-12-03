@@ -1,7 +1,8 @@
 #include <graph.h>
 #include <queue>
 #include <numeric>
-#pragma
+#pragma once
+
 /*
     1.Mark the source node with a current distance of 0 and the rest with infinity.
     2.Set the non-visited node with the smallest current distance as the current node.
@@ -12,6 +13,7 @@
     4.Mark the current node 1 as visited.
     5.Go to step 2 if there are any nodes are unvisited.
 */
+
 void Dijkstra(Graph& graphMain, std::vector<Worker>& employees, Task& srcNode, int Day) {
     std::unordered_map<int, int> distances;
     std::unordered_map<int, int> prevTask;
@@ -23,6 +25,7 @@ void Dijkstra(Graph& graphMain, std::vector<Worker>& employees, Task& srcNode, i
             distances[task.first.taskID] = 10000000;
         }
     }
+    
     distances[srcNode.taskID] = 0;
     pq.push({0, srcNode.taskID});
 
