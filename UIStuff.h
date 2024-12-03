@@ -6,18 +6,8 @@
 #define PROJECT3_TIMECLOCK_UISTUFF_H
 
 #include <SFML/Graphics.hpp>
-using namespace std;
+#include <string>
 
-class MyWindow {
-public:
-    MyWindow(int width, int height, const std::string& title);
-    void run();
-
-private:
-    sf::RenderWindow window;
-    void processEvents();
-    void update();
-    void render();
-};
+void showWelcomeWindow();
 
 #endif //PROJECT3_TIMECLOCK_UISTUFF_H
