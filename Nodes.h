@@ -14,7 +14,6 @@ struct Worker{
 
 struct Task{
     std::string TaskTitle;
-
     int taskID;
     int TimeToComplete;
     //Jobs are made up of tasks to complete, which vary in hourage.
