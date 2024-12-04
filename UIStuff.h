@@ -7,3 +7,4 @@
 void showWelcomeWindow();
 
 #endif //PROJECT3_TIMECLOCK_UISTUFF_H
+// commit
