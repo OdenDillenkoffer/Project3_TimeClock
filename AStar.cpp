@@ -1,7 +1,7 @@
 #include "AStar.h"
 #include <iostream>
 #include <queue>
-
+// commit
 void AStar::optimizeTasks(std::unordered_map<std::string, std::vector<std::pair<int, int>>>& taskGraph) {
     std::priority_queue<Node, std::vector<Node>, CompareNode> openList;
     std::unordered_map<std::string, int> closedList;
