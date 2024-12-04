@@ -14,7 +14,7 @@ int main() {
     taskGraph.loadWorkersFromFile(filename);
 
 
-    int totalTasks = 100000;
+    int totalTasks = 1000000;
     int dailyTasks = 20000;
     int totalDays = 5;
     int taskLengthMin = 1;
