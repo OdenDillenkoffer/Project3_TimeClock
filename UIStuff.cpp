@@ -1,6 +1,4 @@
-//
-// Created by marke on 12/2/2024.
-//
+
 
 #include "UIStuff.h"
 
@@ -12,17 +10,15 @@ void showWelcomeWindow() {
         return;
     }
 
-    // Title text
+
     sf::Text title("Welcome to the Time Clock", font, 30);
     title.setFillColor(sf::Color::White);
     title.setPosition(400 - title.getLocalBounds().width / 2, 50);
 
-    // Footer text
     sf::Text footer("Created by Oden Dillenkoffer, Markell Peterson, and Jaden Edgecombe", font, 20);
     footer.setFillColor(sf::Color::White);
     footer.setPosition(10, 560);
 
-    // Center text
     sf::Text centerText("Press Any Button to Continue", font, 24);
     centerText.setFillColor(sf::Color::White);
     centerText.setPosition(400 - centerText.getLocalBounds().width / 2, 300);
