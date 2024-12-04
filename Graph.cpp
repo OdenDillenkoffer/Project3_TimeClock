@@ -12,12 +12,11 @@ void Graph::loadWorkersFromFile(const std::string& fileName) {
     }
 
     std::string name;
-    int nameCounter = 0;
-    while (inFile >> name) {
+    while (std::getline(inFile, name)) {
         workersTasks[name] = {};
-        nameCounter++;
     }
-    std::cout << "Total workers loaded: " << nameCounter << "\n";
+
+    std::cout << "Total workers loaded: " << workersTasks.size() << "\n";
 }
 
 void Graph::generateTaskGraph(int totalTasks, int dailyTasks, int totalDays, int taskLengthMin, int taskLengthMax) {
