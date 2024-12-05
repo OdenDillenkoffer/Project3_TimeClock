@@ -1,7 +1,7 @@
 #include "AStar.h"
 #include <iostream>
 #include <queue>
-// commit 1
+
 void AStar::optimizeTasks(std::unordered_map<std::string, std::vector<std::pair<int, int>>>& taskGraph) {
     std::priority_queue<Node, std::vector<Node>, CompareNode> openList;
     std::unordered_map<std::string, int> closedList;
@@ -61,5 +61,4 @@ int AStar::getWorkerTaskLength(const std::string& workerName) {
 }
 
 void AStar::assignTask(const std::string& workerName) {
-    std::cout << "Assigning task to worker: " << workerName << std::endl;
 }

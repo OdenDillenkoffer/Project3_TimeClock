@@ -3,7 +3,7 @@
 #include <queue>
 #include <unordered_map>
 #include <limits>
-// commit 1
+
 void Dijkstra::optimizeTasks(std::unordered_map<std::string, std::vector<std::pair<int, int>>>& taskGraph) {
     std::priority_queue<Node, std::vector<Node>, CompareNode> openList;
     std::unordered_map<std::string, int> dist;
@@ -58,5 +58,4 @@ int Dijkstra::getWorkerTaskLength(const std::string& workerName) {
 }
 
 void Dijkstra::assignTask(const std::string& workerName) {
-    std::cout << "Assigning task to worker: " << workerName << std::endl;
 }

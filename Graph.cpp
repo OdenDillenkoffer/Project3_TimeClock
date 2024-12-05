@@ -3,7 +3,7 @@
 #include <fstream>
 #include <random>
 #include <iomanip>
-// commit
+
 void Graph::loadWorkersFromFile(const std::string& fileName) {
     std::ifstream inFile(fileName);
     if (!inFile) {
@@ -16,7 +16,6 @@ void Graph::loadWorkersFromFile(const std::string& fileName) {
         workersTasks[name] = {};
     }
 
-    std::cout << "Total workers loaded: " << workersTasks.size() << "\n";
 }
 
 void Graph::generateTaskGraph(int totalTasks, int dailyTasks, int totalDays, int taskLengthMin, int taskLengthMax) {
@@ -52,12 +51,10 @@ void Graph::distributeTasks(int totalTasks, int dailyTasks, int totalDays, int t
         }
     }
 
-    std::cout << "Total tasks assigned: " << tasksAssigned << "\n";
 }
 
 void Graph::displayGraph() {
     int totalWorkers = workersTasks.size();
-    std::cout << "Displaying task assignments for " << totalWorkers << " workers:\n\n";
 
     for (const auto& [worker, tasks] : workersTasks) {
         std::cout << worker << ": ";
@@ -75,10 +72,8 @@ void Graph::displayGraph() {
         std::cout << "Total: " << totalHours << "h\n\n";
     }
 
-    std::cout << "Total workers processed: " << totalWorkers << "\n";
 }
 
 std::unordered_map<std::string, std::vector<std::pair<int, int>>>& Graph::getGraph() {
     return workersTasks;
 }
-// commit

@@ -6,7 +6,7 @@
 #include <string>
 #include <queue>
 #include <climits>
-// commit 1
+
 class AStar {
 public:
     void optimizeTasks(std::unordered_map<std::string, std::vector<std::pair<int, int>>>& taskGraph);
